@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cred Fácil Brasil - Empréstimos Rápidos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    :root {
+      --primary: #0f62fe;
+      --secondary: #111827;
+      --accent: #10b981;
+      --white: #ffffff;
+      --gray: #6b7280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    header {
+      background: linear-gradient(145deg, var(--primary), #1a73e8);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    header img.logo {
+      width: 180px;
+      border-radius: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+      background: var(--accent);
+      color: var(--white);
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #059669;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .feature-grid,
+    .feedback-grid,
+    .parcerias-grid,
+    .selos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .feature-card,
+    .feedback-card,
+    .parceria-card,
+    .selo-card {
+      background: #1f2937;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    .parceria-card img,
+    .selo-card img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .feedback-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid var(--accent);
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: var(--gray);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: #25d366;
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    .whatsapp-fixed:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+
+<body>
+  <header data-aos="fade-down">
+    <img src="./assets/images/credfacil.png" alt="Cred Fácil Brasil" class="logo"
+      style="width: 45%; border-radius: 25%;">
+    <h1>Crédito Fácil e Seguro para Beneficiários do INSS</h1>
+    <p>Parcerias com Bradesco, Banco do Brasil, Agibank, PicPay e outros. Atendimento rápido e humanizado!</p>
+    <a href="https://api.whatsapp.com/send/?phone=5511916995357&text=Tenho+interesse+no+empr%C3%A9stimo+e+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"
+      class="cta-button">Fale com um Consultor Agora</a>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Por que Escolher a Cred Fácil Brasil?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Dinheiro Rápido</h3>
+        <p>Crédito direto na conta em poucas horas.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Segurança Total</h3>
+        <p>Empresa autorizada pelo Banco Central do Brasil.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Atendimento Humanizado</h3>
+        <p>Consultores especializados do seu lado.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Parcelas Acessíveis</h3>
+        <p>Taxas baixas e parcelas que cabem no bolso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback" data-aos="fade-up">
+    <h2>Depoimentos Reais</h2>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <img src="https://i.pinimg.com/736x/69/96/db/6996db93ccf467f64da867ddac725347.jpg" alt="Cliente">
+        <p>"Recebi tudo no mesmo dia! Muito grata pela ajuda."</p>
+        <strong>- Wanderlei, SP</strong>
+      </div>
+      <div class="feedback-card">
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Cliente">
+        <p>"Atendimento rápido e de confiança. Recomendo."</p>
+        <strong>- José, RJ</strong>
+      </div>
+
+      <div class="feedback-card">
+        <img
+          src="https://www.jornaldocomercio.com/_midias/jpg/2024/06/25/760x541/1_luiz_carlos_osorio_e_nina_rosa_furtado__autores_de____os_velhos_tambem_amam____credito_pedro_schneider__1_-10624250.jpg"
+          alt="Cliente">
+        <p>"Estou surpresa até agora com o valor liberado, a rapidez e eficiência desta equipe maravilhosa que eu já
+          amo! Obrigado a todos ❤️"</p>
+        <strong>- Marcia, RJ</strong>
+      </div>
+
+      <div class="feedback-card">
+        <img src="https://i.pinimg.com/736x/1b/cb/88/1bcb8892a184c6a921146e2714f13167.jpg" alt="Cliente">
+        <p>"Finalmente consegui algum crédito mesmo com beneficio bloqueado, gratidão a equipe Cred-Facil!"</p>
+        <strong>- Fabio Rangel, SP</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="parcerias" data-aos="fade-up">
+    <h2>Parcerias</h2>
+    <div class="parcerias-grid">
+      <div class="parceria-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Banco_Bradesco_logo_%28horizontal%29.png"
+          alt="Bradesco">
+        <p>Parceria ativa para crédito consignado.</p>
+      </div>
+      <div class="parceria-card">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAiIAAABcCAMAAABk3S6AAAAA8FBMVEX94QAAOIL/5AD/5wAAN4P/5QD/6AAANoMAOHz33QYAM4QAL4UAKIcAMIQALIYANIR6fWMAKobIujI/VHcAJ4fr1gB+gl6gnUW9tTEmR3uHilPGuynHtzwAJIdWamdTZWyMi1pIXW/cyxxvdmSLjlHcyCywqT/bySAAH4g4VHJrd2CCh1eRk063rjsAN3xebWZzfV0OQHuZmUro0xJIXm6cm0ino0SWlkx8g1kmSndjcWSnnlLNwCM8V3GzrDsXRHkpTXNkc2BUZmmBgWMoT3E/V3IAF4UAEIqNlUBEX2q3qkkJRHRXbGJjbWyTkFhrcms74JsTAAAYbklEQVR4nO1daUPbuNa2JVuO7diuMwlbahjSkLAFCKaB0FAol977dno78///zWvJWo5sJTDTCzMtfj6BF1nLo6OzSbGsBg0aNGjQoEGDBg0aNGjQoEGDBg0aNGjwskDo8UdeoBoN/rHAgz5+7JHxi9SkwT8SCI/s/SPfXfGI6589vFh9GvzTgHunbc+O532y9BHSn3dvXrBKDf5JKERIFNkFvP2rJYKkECH7XrL7whVr8A8Bzk+7jl0inndMgoR05rFtNxR5nUBkZke2hJeu1QSJa52lid1Q5JUC5/eZZ0PE0w3dtMEb05hJmYYirxAIayJECJIzIEgKLSTlHGoo8vpQiJDUqzKkQDjtCEFSiJBQKCoNRV4bEJoFSoQ4ARQk2VmPkSQ/BMtQcPB3V7nBiwLnO21HDn8S37ehQIlvNwrTBo3n6pmw1Wk88K8IyF2Pldxw4rsB6XOtlAuS9qGPi8eOo4BrKIdVU8c3odBv8M/NJHOzLRe7P1W78WCnq/gQhMcIFYrplaaZhNO3xWJDxjdUkIRMqkCgTtyqYfr17uLdZd9/LNzzA8M9sOvtvp3ffDuaDPCqCMYPBUTWoRbSPhiXQ4orgiRlgsS6bEdZTYQUFOk6NXieF0RxOj3q/bQkcX8JTO1OgjBNLjbIzyFJ8GAXaCFBcC5XBte6Yk4yKUi8jeIeGXwx+FxRp20vgxem5z/NhKrA/cVkBJaTLchu8p+g3Qi9D4H1ku4O4PCT/mYMx7p7WMgDZNIuVlGk6K1s7SfoKxNWUKRA1Br/8HIEDy5SsJgE7yvDX2gkmSZIWkuE52qK2Hb38udca1ZTxA42/b+7ht+HQoRk0AFie3eL6kiSxVwTJNm1UbF4jCJONPjh55MJj1DEjq9+6KlBxpoIYQxItyy4JGBq2hx1NdOmNTGsNBpFwna73c1SjX3hM/QVcnEBd5l5Wd7+H1ifCLnFR4zFQIokGUM7Ap3qdH9gMYLc81gbxLJJ8d1CaiO494lKFdy/1U0bgyCBFEkn1DeQT66h1ezYmjaCAbSCXOMNcVUNE8Jur//bh9+3hh8mg7p6xG7PPhxvHX/4rd9z66Smow6xjEvFq/5iYzKabCx8VDdjAUWSm5xi0L8KQbvTmVtprkD9c+a2i/pWXkeiodobqHr/O8A9HHUk+1s+Kr82csIuzU90raMYaiRRNKm2T6PIW5e1iSymoK8yTXP7/Y3Er1ovzd7JG+9ycRUf8ysbogycHz9k3TQOwzBOs9abhT7J8WB4R2/HYRyn7exua1Dpc9Tf3YG4P33z+2hgVUcG+6PT1n43pejut959rPp4IEUuUAkyAO0OrumMW3tTxb9+Xd+rfA5fqtuHem1xbzEbrr15p3A9YnR1R6K/3lFxhcby373v5AhCl2FdhIjBfKBfo7lFRUtTJlVIf55qztaqINEpwmuHx0Dmph/BFMzDMOII4xw0Bp91xY0oOxbfIBdpeeU9v4KGSQzo50XpPSAB8s8ieNv24mjN17oMbWSBjihM48/rWl5/0UvTduCBz7Sn6zoXIUVkXBMvuuqdu6L7/KlsrkSYpgczzXvgt9RT+wsoMDunrW4aamV0t1h78Zbor6xHH+3viwLefh9F0PigqoWoNqU7xZjRDOfSn5akV0W/FYJEc7ZGyUe9y00UschRKK/GH9QYuiOguaQzwDa8prx43lys42Sn5HO8zh/drVU/imU8Gg20hZHBiaeajwJtmNTrJJ3uAab1bmqhby+90LhmpIiF7+X886a0EZtGpTbp3oPCUAfYBeERVtX40o5q74eCIqFoYEkR0az291EEjf8dVj8pu7o1K8zaQoTIoK4Tb9KIHVkcaBPzP5o7zEwRNFbTKT5WnU+ugQgLtpdQxG5P+CcqFEGn0MgSFYr75dMon5oEZDCF0spMERrA3JDN8ue17JkC4R3syiUUWZcV9KZ06MwUKRq0A5p+BQbFm0vC57fGajwvRSx38WBWRLzsPsc0PfEEuOTT2z6lyB6kSJSOtBLNFLGsTPUGoAiCQsAJgdKvUSS4N1IEKxkUtbvSAZxwHwTZEUU4xe22LC+6N1OE+cxVD0jrnJzKIQsKVUTSLj6EerSRIqA3qhTRPlaMpPIX+XdQu4+k6najMUQ4+Z+bIsUqe2wwZ4qlpRQh98DMTcIjVDV9vXT7KbpIcVlRpFTtq+PDWrOhWqNRxM74cOkU8WWHx2f9wcaueCNl3e1uiG86YXG7fygXnWyi5J6qQhlLiuVng4NSQXBVJeOd3zZmF0IwOGlf1fdximzSh2WNnSRJghTOPzE/0J6SuPSb52UHuzNw2QnjhCN9bopQoXCT2jqc7jYVIXjmgGFS6qq6Ftmjqk21ZKEZKIp0VceSM21iRGdKa9MpIu5oFHEnotPiLYKQax1wOeK16NP4QnA/fk+offFejG1yoL6jKBJ/zAeDQedQLg3dkrHujignHRKMMFkTT0SnIFPTSBF3JHsr+EI/KijitIqPjTuKtnY64oXhobb4BzvldfKgbEknOOoPBEpz7zkpQmO2+5ogicJRYcri3nYbeoOoK81F0Oj1MsqkamlmdfVSdryTgqd5j/F+8qbLpIjjibUDUAQf8kecE6Zd4JH4CLWr0SAQxd6VjECCQva+0kYURdIOZpbqubgQbNP30ECkYAq1QAovJ+3J+i7RRVQrYibaFEUI+9hHmd8ZnfG+JA9apzheyYGemmR2OiFIgn/pOSlSVGpwo3SCcu1A7iyGUvBuTKpZAdHJR0OYxkgRN7dlB4ZnSkXvl2PqTHmpsRIwOkXstNRPNYoQsZgHO4wDKBf9TdcydyYmsDB/lO6YrhvWupRnz5GbRAxjzt6S5XBLW01zOfOXUETVqKAtoxOgSPkxOXeSG07kfL984pa/2mZOAjXmsr0anpki1O4XGknUomsH1UJgeuLQYloIMP2c7nVdhFhVirB56ZLxnRRTTqBiNKKvk//jzQuHssgKRZIyQVajSG+f3+Qam4UTXmdqKWK5iAlfHVrIFUIpmnWKuBPBCaYb4TeinLYopyMeiFQwQaMIn9/Y35XtTstHqxSxfFFnb5M3gq+H4Tl/NHrHNKuPaoGHCr/sr2emCHVuHVDTxiu1EDLzoAiZ09wistiEIiQyBWgsnSLxjK6Vi8lhoBiSrYPmfWbz1bF7vJ+Sz6pCOkX4AEKKqF4QCjC5Fb1aUACJ4XFioQj6Yk4nv8hpWKeI1ROPMcbK5clp8WUF5WIREDPfqnhXez3mgV/fVFbUXVmJGkXIF6FAcYqQUoVy7LzFF5yA1sv9DVDkw99BkUI5PY+CcDqihszgC0xPjIYuS0/MoCFzvSzJUAvjxV2KVLlWk/QSaIqDUt0s1vySK4WiLkVMlSLBKf0gpIjqNLGgka+lhzzd/y+x/Dmvr3crPkhO5IyV5rWBIv6DYNof9JtSU7qTVBN+da9loogI43WlY9dJH3pl4TWKSGHHNSaUe+UGtl/IKec40++B4suVJB0vQBEWrDllhsx6AtMTH5gI6cCUInOMt8SKZAAn6M7hlj4hUuNLIpxFqZQxkiKim9tUxYQUwR9ElYQKg8Z7HAXTeidyqkul+UHZE7K+dYpIEyZhZx4INTG5kPQV7HMCSbUVyQBemF4J52mdIkLnLi0eSYXokAjViTlYoS7ixLVUjZehSKFuIKqF7ACNI4iPmRZyBq7V4zJaIUsp4rS2Jwg6YoVe2O3jt3yKBPdVigTXvAuZwqFRRHSKHYo4BlTzc0GgQHrKyBex9nhSWhkoQt4Jdt7SWS0oEnwjlYrbTiSptoIid0OltdUXGlEWT5LA3N+c/obH/MulJYWAj9ObjmtxxhehCOvjWQi1kANmyHSgIRNOJ6uSdVdQZPt8oS1PXN10Il9I10JoiWkpKBL+zuWt1/IrFLkSNQ1NWUpqaKX3gmwLiiiXpYEiUoBRU1t5dKJrSRFJNfXlpRRx5r9Ocil0axTpCdOcBxl6XAMJxwgJZSSkwVqiueXDdaTnI7wURagIAVpIelkXIdmn1VnsKxaaJGzPL1UEVYjUwgCwiPA5p8LxqSjS4Q4yamFqFBGruBPm9V4AQ/tOxok/SVLtraKIjDkWhEUyWCsdF4pqdCBFa5ZKES9KvdMxZ0TN6D2WI8urU37OcQqBLpQR5mBFuQP98unNBtFyvl5moXHXdRFCw+q40wqBCGEpq661PEdZo4jneYnnaVlI80F1TlMJK0cl+iTWaEGRXxFf+QNKpb9CkTdy8RLrvh2vpIhcwbKemSL/fYQiHoNqtxOl3I0OXWc032ciVHme0ysaFdwTqavZAdOC8EQLNwfpwQaQJC9CETy40AyZcp/VGYzIlFvx0OXtZKkkgRTxNu8OPt/N7S6MyLXEePa4XUAFB9rgyojXErWRFJHepXSBNIpI52pkosjYQJGzp1FEusayHFJEOkFUfFpqQTpFprfzAq02mHDZMeM+oMji6OhICu32aVmQcO1QXyza453iBKyB5KOW+1IYTgcTmbTyIkbvuvJeiH1WpNBCVJUKEcK2z9ykCdttZS5HS0y0fMv38/4hcOVHF9yLyFXU0pfmiwEV1gmgSM6X62IaL6FIz1CP/w1FkJEin1ZSJNntsd2avb0rpWI62R4M4xUU6cUxz+ZK4v0tXpsFrzUzdH3h5+Fe3Mrm2eLF9oXIHn0B15m+zyq6pFEa/1AL6tKtdwgds2h4udvKgHpiYnGNLJQD3s7K6JgYL2/Oelg4qEQKjaIIFiqE0+5BikjN4ukUWftfUUTqNEaKCOsYkY4a0uCiEqORaVbJl0th8ogFt3T3SZ0nuObRXusojDSSBNmwFCTP74CH+6wKVYgZMhtToEOXu3exTHQtd1sZijKG8fBERbKDU0Z8MUXKnE6pjHBPO6SInFrx5RKK5IZ6fIcU2fpeKSJrAbLtyt0hUBfJecnthTQRhd5V+nKkMuLE0m4fH4ahRpL2qa9V+pnCeDnM7wuyc4uJEGjI7DMRQi7BYhS2TNbvknwR6W3i1qsSqWVwTCVlxKUdCShiYS5ivFuNIs+mixw9RpHVugjMFxmrWcbCBNCiERaLisqhPT780RpzhcigUlce0IHw4Kyt6STxPZtjz5oMgN7vayIkJ0VFNjwgQuLbDhMheoqal50+skkCUET500unhGxSumCxvlyEbXkKDaSIdD6nnW8mXeTPWzSrjV7pcNHV1adaNPDYJl9NDfY+pAjqc20sFkTDx0Izn7BOQcJDXFKG15j4x1No3HRpVO9ZU4rGFyBJKAjPqYu1BxVML1srtZComp9m8MQvo8i50nvZWMiQW8gzY0S2Y/ClRhEZFAmut0t58gSK5MrlZZj9KykimZT5IOtWhYfJ/ZMpgj7L/JrgW4UiFuKeVVky2uVPR52cZQupGJ/WQuy/b6kZ7Nm9Z01MdM91LYT6QshGC4oQdsQZGd8YcuW9tCpIllDEncXaZRHCoy5Mll8H1NlybYUUkVpciydRaH4R5V1FrovLDVOWlcvMoG/SEyOG1klWeVfJHzLNDHpXA+VdvRAOeKN3FVKE7CqKXKAKRTCXjmKlRLnSbh3Ns+KEld0w2P+khoMuYc+X3lzmAIiKnMyoUABJ7+LEVWQdp1URUiIKJ1oVlkmRS0CRwoQD//M0Xe12hSJowPV4uRrpDviFSORY55hZSHq2gy9S15NDe5KvoAgSYTy2r6FniNHI/IBA2lKPSxEWFKx4V7l05GacK7OXap1STxEhKrmeyskX2iThlOtGDnIBSi2EaEzS8aRNEiAxh1Nk18w4W5o4kCJAtPNqUYpI21T6Us6ymKHd8pGK2N/JXv0qLk3l0JqSAYT+UEZ6hbhTI+/KgU5ku5fpIirlnSXD6BTBQ552FzHJKWM/hk65qA00EQFO5nd+NimC9u60bQrpPTs3ZMRPK/K65VmrQ1OWfIkoGj1Fisisi/Ky0k7rKC0enSIidCHA8kVUnqHIFxFKhDcvai2UG+dE1AHLbNb5isRElVLEojtIUk1u+OrJS7fGlCJg0eyBLI8dtyZFerz3Sx3dB+mpFRj0LVd4pBn5nnWThLZhMwpYanN+T+vOj353r/6zLETltE/zp+giZKjWGWrRqASZRO48VPtT6FjpFLHcuVYFlnUmEwhjkXUmZiHNBsPfRIGZzBYTSz1I/qxTBFyh5boyrOtw9wsaiGTC4P4RikjS2gaLxgL+Q5r2pHIPvXqngK0louaSBc8qRSy2ua6tCxKaV4RGYSh/QALNQJIRRBSPqkcpGLZ9I1xoHiDZoZASMoiZfP6X2OAs5SZbmSsUwefaTg5GEWXWco8FEbM7+gTXIbE9R+WcimRXy0QRKcC5dS6D8GJ3hwgd0DD0ktxVXjaZgVrX/CIW8HywMLYwuLxfZKe8E6VyhyOAytamttIz+0X03VbF0sEEybU6yUzfMCFQN2esaoyGHR7RP/8KQwvRIbF8oaynHSIPORCuZZYBWKGIlZ/AlancJCGonXxmVFb55tQdB5KQxSYcaQIpT1SdIngh9dNdV3tAxAZAOSpjX6MIP1Kzcw1WcSfJqxaNpTLcirVCaU/pSHWKyJJwutW5iKRgZbHyZ/aujrXdVk6XCRLo8UBk1KoKkuikts/KqiQD0CNoskx3BtrZHpLdDvRGJVnstJi9VYpgbVdWuUlC2rDhgg4mOYb7aFSGaWF30HoikS9cPK/qDSjSJwWst+Ipu6sn+dA0xLIcwW8ZlrYqkV52oqbXbWsz71rfasUpIlbLbgdL3aKt9A5Fx3aHaMjVNtJ0smqhAe99xzlz1d1W5X5NDTg/1Thi3GdVpYgJcbEIyIaDxRwITqq8VSminNHsCbYbbySNjYMewWQhs5eZFqniI8Euvd2TRhQ8KElRxLvY3t6+mEs+BzeCnLKcC5+WcyB3+ald+zpFKhYru5TllUgvf094BXeIcEAn4MR0pXB5d6fbALtqs7XjrHKdJbvynfv17+CIvtuKmjJfqgQgC2CU2OHJkvTExygSHdBVRMzDGChhaCz3MFBts0IRleTJ3qvs6U3i+zX12wbdslS5J8IO4vuze7maek5ukiJ2Qk8XUaGkhLvFwH6pICw+o8o5AeU8ctaZ056Y99HInVzZQiwcQFMC5pXtaaegJMBC3CIrKFI2i6F9ZJrUTwNBtbNoomQGDyBy/TXoY1uyz8p6jCJOelMIfRGcYHEy8K7s5cIGqVHE/Qh3X5QnA0zUrv5AKf8B/7E+rDZK09uy+m14jsnSwyMC9bMZ7zNjORksZzVFknRUyzrjL/pc3HhyCqTwUH1tZhgRfGVOgqUUUQj/MkVw736iBfrLT6UXigY0mUXdWrrPylpNES/sHtHcVRlK9aba4a5y3S30+xpFLKulBoHvwcRXWd29Esj0dnxkuO1k2nl8Zop4Kcwxx2fGco5g5Vcezdudi10NdYpIi0m8D/Uz3S1tgpfOyw3Nz0gR5I6iKKNbp9huK1BiEPPDmlz/7Gn7rGhxKw743jzKy46Z88Ow9ToXxiR/PtomeC1kf8aSIngYywLFfhtyXEmxKWq3KbNjLbIehRWVIAzONesRbXSrdQ3CdP5eM+bxZfUzTpisa+UYD/h22AHf3oWaUZsJv3EiEwAGkae9E2kbqdA4M5QrTw9vt4YWTyniveNxihhe+4sUwfl2ed7/WyZILjRB0t7JDemJy0UIrZvxZwJuH3bevF/45YtoL+DXQ/13SnonJ+X1k6mPrxL2ZyAXZjQQt1utSCheeHydplHCOzmJ2idDeL4UHhxG7YgPC70dnlXOw0MbYeVo/4M/hv3qcXhk/ClMYTnRYaUc9yHyqnBat5WfCfDnsoXKo3DtaRWIKk6yryctI6Zfi8LfCrcDHopODUqKGIYh2PoLFFEnmXnpJxquc9/rPhJvhv/EPquyGx7/sRHwYxxabeCvdBie0X7FQ7Yg/7h2cxJSJA9rk4qAQ7hX3LbZ7ZObtY+9Or1rVTWdQ1mUMzrj5dg3Z4ZyjM32qz82YmhB7dUnFcwLN/Spv+K1WrseR76jVpDwhDpZiH7St9Pdua3ss/oLn3leuJgQq9fr+YSYftZD3LbMt//UZ/xe/t3l/FjAW2CjaHrHfIWV3wuw4VmSmTlftcHPC3BmUhBvyQNvCkFiUs/LTRINXhUkRZz0Rh3nTffUeLW4XbnPqsErg6BI0B1qpxVXjhgRIuTvqmaDvw8lRfgBABoQ0RIADL+S2OBVgFEkCIem38+Ax53FtV9JbPBKUFCEHoZoXkGQy88a8fbPGhHyWoGH7Wi4/EAZ6nn1eIZzg9cJfHSwRISUQHjWiJDXDbSwHnF04EGnMWReNR73hJl/Ca5BgwYNGjRo0KBBgwYNGjRo0KBBgwYNGjRoYP0/jJNL2LNqzasAAAAASUVORK5CYII="
+          alt="Banco do Brasil">
+        <p>Atendimento exclusivo para clientes BB.</p>
+      </div>
+      <div class="parceria-card">
+        <img
+          src="https://d1.awsstatic.com/customer-references-case-studies-logos/Logo_Agibank_Positivo%402x.0f36a42b791948da5da72de4b2cda8cdcd519c47.png"
+          alt="Agibank">
+        <p>Facilidade na liberação de crédito.</p>
+      </div>
+      <div class="parceria-card">
+        <img src="https://www.remessaonline.com.br/blog/wp-content/uploads/2025/03/picpay-telefone-1200x675.png"
+          alt="PicPay">
+        <p>Transferência direta via carteira digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2 style="margin: 10px 0">Até mesmo o presidente nos recomenda! 😊</h2>
+      <img src="./assets/images/lula.png" style="width: 70%" />
+    </div>
+  </section>
+
+  <section class="selos" data-aos="fade-up">
+    <h2>Selos de Segurança</h2>
+    <div class="selos-grid">
+      <div class="selo-card">
+        <img src="https://files.sunoresearch.com.br/p/uploads/2018/01/bacen.jpg.jpg" alt="BACEN">
+        <p>Autorizado pelo Banco Central</p>
+      </div>
+      <div class="selo-card">
+        <img src="https://xadmin.s3.us-east-2.amazonaws.com/1/news/15042/image/7222d1c16ce25b203d0504ea00db3773.jpg"
+          alt="SSL">
+        <p>Site 100% protegido por SSL</p>
+      </div>
+      <div class="selo-card">
+        <img src="https://casachafariz.com.br/wp-content/uploads/2023/11/gsb-3-300x126-1.png" alt="Navegação Segura">
+        <p>Verificação Google Safe Browsing</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cred Fácil Brasil. Todos os direitos reservados.</p>
+    <p>Termos de uso | Política de privacidade</p>
+  </footer>
+
+  <a href="https://wa.me/5511916995357?text=Tenho%20interesse%20no%20empr%C3%A9stimo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+    class="whatsapp-fixed" target="_blank" class="whatsapp-fixed">WhatsApp</a>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+</body>
+
+</html>
